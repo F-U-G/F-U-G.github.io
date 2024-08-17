@@ -12,4 +12,4 @@ I want to use this blog as an outlet for my progress on learning many different 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[alist.fug@gmail.com](mailto:alist.fug@gmail.com)
