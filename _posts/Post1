@@ -1,0 +1,101 @@
+---
+layout: post
+title: Beginning my Linux Journey
+---
+
+Hey all welcome to my first post documenting my progress learning Linux. There are many reasons to learn Linux, but for me I'd like to host this website on my own server. I already have some hardware laying around but for now I need to start with the basics.
+
+### My Distro:
+	Unlike Mac or Windows there are many forms of Linux. This is because Linux is open source which means there are many options we can use. For my learning process I'm using Ubuntu running on VirtualBox in my Windows computer. I didn't put much thought into which distro to use as I can always switch at any time.
+
+### My Learning Process:
+	To start this process I'm using https://linuxjourney.com to get a grasp of the fundamentals. Its free and pretty easy to understand, so far I like it. Right now every lesson teaches a new command to use. With this I've created my own library of commands which I will paste at the end of this.
+
+### The Command Line:
+	In order to truly understand Linux, you must be able to navigate the command line.
+	![[Pasted image 20240821171147.png]]
+	Think of all your folders in Mac or Windows, you click on the folder you want and open the file your looking for. In Linux you can do this and more within the command line by typing. If you plan to run a server like I do, it's recommended to use a distro with no user interface(UI). That means the only way to do anything is through the command line.
+
+### Basic Commands:
+	date
+		displays date
+	echo
+		prints text written after echo
+	whoami
+		prints username
+	!!
+		runs the last command again
+	pwd
+		Print working directory, Shows what directory you are currently in
+	cd
+		change directory
+	ls
+		lists available folders in current directory 
+	touch
+		creates a file with the name
+		$ touch filename
+	file
+		tells you the info of the file(in Linux filenames can be a type they are not named)
+	cat
+		short for concatenate, displays file contents in short form.
+	less
+		opens the file in a page style with its own controls, h for help, g for beginning, G for end, /(searchword) searches for that word, arrow keys to move pages, q to quit
+	history
+		prints a list of every command you made in the past(ctrl+R also lets you search for a command by typing)
+	cp
+		copy, heres an example:
+		$ cp img.jpg /home/fug/Pictures
+		first part is what you are copying, second is where it copies to.
+		With all commands you can use wildcards to signify all files of that type for example
+		![[Pasted image 20240815215046.png]]
+		this will copy all jpgs to that folder.
+		If you want to copy files in a directory to another then you can add -r after the cp. This is a recursive copy.
+		also you can add -i to make it interactive, this means it wont overwrite a file if its the same name.
+	mv
+		move, moves files and renames files
+		$ mv filename newfilename
+		this renames the file
+		$ mv filename /home/fug/Documents
+		moves the file to that folder
+		$ mv file_1 file_2 /home/fug/Documents
+		moves more than one file as well
+		$ mv directory1 directory 2
+		renames directorys
+		-i works the same for this one, it wont overwrite any files
+		-b works by making a backup of the old file with the same name with a tilde at the end of the name
+	mkdir
+		make directory
+		you can make multiple directories at once or make sub directories
+		$ mkdir directory1 directory2
+		$ mkdir directory1/subdirectory1/subdirectory2
+	rm
+		remove
+		$ rm filename
+		-f will remove file if it has write protections without prompting the user.
+		-i will give you a prompt
+		-r is to remove directories
+		rmdir is also to remove directories
+	find
+		finds file
+		![[Pasted image 20240816142244.png]]
+		use -name then type the name
+		-type is for the filetype(d is directory)
+	help
+		helps you, also shows some options with that command
+		$ help echo
+		some other executables might have $ echo --help, instead
+	man
+		Shows a manual, is like help but for brings up a menu like less. 
+	whatis
+		tells you what a command does in a short sentence 
+	alias
+		makes a command into a name so you can spend less time typing it out
+		$ alias foobar=ls -la(the -la doesnt work in ubuntu for some reason)
+		now we can type foobar to execute ls -la
+		unalias can remove them
+	exit
+		exits terminal
+	logout
+		logs out 
+
+These are the commands I've learned so far. Nothing too complicated, but very important. I already feel more comfortable managing the command line. It also kind of fun and adds more intention to managing files and folders. I recommend trying this out if you have never done it before. Just get a virtual machine and a distro of your choice and mess around with some of these commands. Anyways that will be all for today, cya.
