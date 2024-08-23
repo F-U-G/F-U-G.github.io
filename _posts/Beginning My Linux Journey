@@ -1,5 +1,7 @@
-layout  title
-post  You're up and running!
+---
+layout: post
+title: You're up and running!
+---
 
 Intro:
 	Hey all welcome to my first post documenting my progress learning Linux. There are many reasons to learn Linux, but for me I'd like to host this website on my own server. I already have some hardware laying around but for now I need to start with the basics.
