@@ -3,8 +3,7 @@ layout: post
 title: Beginning my Linux Journey
 ---
 
-Intro:
-	Hey all welcome to my first post documenting my progress learning Linux. There are many reasons to learn Linux, but for me I'd like to host this website on my own server. I already have some hardware laying around but for now I need to start with the basics.
+Hey all welcome to my first post documenting my progress learning Linux. There are many reasons to learn Linux, but for me I'd like to host this website on my own server. I already have some hardware laying around but for now I need to start with the basics.
 
 My Distro:
 	Unlike Mac or Windows there are many forms of Linux. This is because Linux is open source which means there are many options we can use. For my learning process I'm using Ubuntu running on VirtualBox in my Windows computer. I didn't put much thought into which distro to use as I can always switch at any time.
