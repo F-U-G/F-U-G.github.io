@@ -10,18 +10,18 @@ www.w3schools.com This is what I've been using to learn HTML and so far it has b
 
 ### Elements
 HTML consists of elements. elements look like this:
-![[headelement.png]]
+![_config.yml]({{ site.baseurl }}/images/headelement.png)
 Elements consist of a start tag, a end tag, and content between the tags. Example:
-![[Headingelement.png]]
+![_config.yml]({{ site.baseurl }}/images/Headingelement.png)
 Notice how the second tag has a forward slash? That denotes a closing tag. Some elements are empty meaning they don't have a closing tag. For example "br"(line break element) consists of just a start tag. 
 
 Elements can be nested within each other. Example:
-![[Nestedelement.png]]
+![_config.yml]({{ site.baseurl }}/images/Nestedelement.png)
 The heading and paragraph elements are nested within the body element.
 
 ### Attributes
 Attributes are used to provide additional information in a start tag. All HTML elements can have attributes. They usually come in name/value pairs: name="value". Example:
-![[Linkelement.png]]
+![_config.yml]({{ site.baseurl }}/images/Linkelement.png)
 This element "a" is used to link a URL. This element uses the "href" attribute with the value being the actual URL text. In this case I pasted the YouTube URL. 
 
 ### Closing Thoughts
