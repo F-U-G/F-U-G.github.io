@@ -34,62 +34,62 @@ Next time I'll talk about the basics of CSS as well as some of the projects I'm 
 ### Notes:
 ##### Some basic elements:
 
-!DOCTYPE html
-	Declares this an HTML5 document
+	!DOCTYPE html
+		Declares this an HTML5 document
 
-html
-	The root element of the HTML page
+	html
+		The root element of the HTML page
 
-head
-	Contains meta info
+	head
+		Contains meta info
 
-title
-	Specifies the title of the page that goes into the browser bar
+	title
+		Specifies the title of the page that goes into the browser bar
 
-body
-	The visible contents of a page
+	body
+		The visible contents of a page
 
-h1
-	Defines a large heading
-	You can put 1-6 after the h, the bigger the number the smaller the text
-	Using the style attribute you can change font size or color
+	h1
+		Defines a large heading
+		You can put 1-6 after the h, the bigger the number the smaller the text
+		Using the style attribute you can change font size or color
 
-p
-	Used to make a paragraph 
-	Ignores lines and extra spaces
+	p
+		Used to make a paragraph 
+		Ignores lines and extra spaces
 
-br
-	A line break, this is an empty element with no closing tag
+	br
+		A line break, this is an empty element with no closing tag
 
-hr
-	Adds a line that spreads across the page
+	hr
+		Adds a line that spreads across the page
 
-pre
-	Defines preformatted text
-	Preserves spaces and lines unlike the "p" element
+	pre
+		Defines preformatted text
+		Preserves spaces and lines unlike the "p" element
 
 
 ##### Some basic attributes:
 
-href
-	Used in the a tag for hyperlinks, href specifies the URL.
+	href
+		Used in the a tag for hyperlinks, href specifies the URL.
 
-src
-	Specifies the path to the image to be displaye in the img tag.
-	There are two ways to specify the URL in src, 
-	1: Links to an image on an external website
-	2: Links to an image within the same website. If the URL begins with a / then it is relative to the domain, if it does not then it is pulled from the same page(Its better to go with the domain as it wont break if you change the domain).
+	src
+		Specifies the path to the image to be displaye in the img tag.
+		There are two ways to specify the URL in src, 
+		1: Links to an image on an external website
+		2: Links to an image within the same website. If the URL begins with a / then it is relative to the domain, if it does not then it is pulled from the same page(Its better to go with the domain as it wont break if you change the domain).
 
-alt
-	alternate text for an image if it cant be displayed.
+	alt
+		alternate text for an image if it cant be displayed.
 
-style
-	Adds style to an element, such as color, font, size.
-	Example style="color:red;"
+	style
+		Adds style to an element, such as color, font, size.
+		Example style="color:red;"
 
-lang
-	specifies the language. Example for english: lang="en" 
+	lang
+		specifies the language. Example for english: lang="en" 
 
-title
-	Can be used to display a tooltip when hovering over text.
-	Example: title="tooltip text"
+	title
+		Can be used to display a tooltip when hovering over text.
+		Example: title="tooltip text"
