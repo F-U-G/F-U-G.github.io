@@ -11,17 +11,17 @@ www.w3schools.com This is what I've been using to learn HTML and so far it has b
 ### Elements
 HTML consists of elements. elements look like this:<br>
 ![_config.yml]({{ site.baseurl }}/images/headelement.png)<br>
-Elements consist of a start tag, a end tag, and content between the tags. Example:
-![_config.yml]({{ site.baseurl }}/images/Headingelement.png)
+Elements consist of a start tag, a end tag, and content between the tags. Example:<br>
+![_config.yml]({{ site.baseurl }}/images/Headingelement.png)<br>
 Notice how the second tag has a forward slash? That denotes a closing tag. Some elements are empty meaning they don't have a closing tag. For example "br"(line break element) consists of just a start tag. 
 
-Elements can be nested within each other. Example:
-![_config.yml]({{ site.baseurl }}/images/Nestedelement.png)
+Elements can be nested within each other. Example:<br>
+![_config.yml]({{ site.baseurl }}/images/Nestedelement.png)<br>
 The heading and paragraph elements are nested within the body element.
 
 ### Attributes
-Attributes are used to provide additional information in a start tag. All HTML elements can have attributes. They usually come in name/value pairs: name="value". Example:
-![_config.yml]({{ site.baseurl }}/images/Linkelement.png)
+Attributes are used to provide additional information in a start tag. All HTML elements can have attributes. They usually come in name/value pairs: name="value". Example:<br>
+![_config.yml]({{ site.baseurl }}/images/Linkelement.png)<br>
 This element "a" is used to link a URL. This element uses the "href" attribute with the value being the actual URL text. In this case I pasted the YouTube URL. 
 
 ### Closing Thoughts
