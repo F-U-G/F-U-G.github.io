@@ -9,8 +9,8 @@ Today I will share with you my progress learning HTML. Hyper text markup languag
 www.w3schools.com This is what I've been using to learn HTML and so far it has been going very well. The exercises to practice have been invaluable in my learning process. It also has windows where you can practice coding with examples they give you. It makes learning new concepts much easier. 
 
 ### Elements
-HTML consists of elements. elements look like this:
-![_config.yml]({{ site.baseurl }}/images/headelement.png)
+HTML consists of elements. elements look like this:<br>
+![_config.yml]({{ site.baseurl }}/images/headelement.png)<br>
 Elements consist of a start tag, a end tag, and content between the tags. Example:
 ![_config.yml]({{ site.baseurl }}/images/Headingelement.png)
 Notice how the second tag has a forward slash? That denotes a closing tag. Some elements are empty meaning they don't have a closing tag. For example "br"(line break element) consists of just a start tag. 
