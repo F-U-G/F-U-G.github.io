@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  font-family: "Chivo Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #fd8888;
+  --text-color: #000;
+  --alt-color: #04645f;
+  --light-color: #fff;
+  --dark-color: #727272;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 15px;
+  text-indent: 5%;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+/* navbar */
+#navbar {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+}
+
+#logo {
+  width: 170px;
+}
+
+#logo a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+#logo a img {
+  height: 80px;
+  width: 80px;
+}
+
+#main-menu {
+  width: 530px;
+}
+
+#main-menu ul {
+  font-size: 1.5rem;
+}
+
+#main-menu ul li {
+  float: left;
+  padding: 10px;
+}
+
+#main-menu ul li a {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+#main-menu ul li a:hover {
+  transition: 0.5s;
+  color: var(--alt-color);
+}
+
+/* hero */
+#hero {
+  background-color: var(--light-color);
+  min-height: calc(100vh - 290px);
+  margin: 70px auto;
+  width: 80%;
+}
+
+.main-cont {
+  margin: 100px 0;
+}
+
+.center-cont {
+  text-align: center;
+  margin: 40px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.img_container img {
+  height: auto;
+}
+
+.project-cont {
+  margin: 100px 0;
+}
+
+.post {
+  /* Add a shadow, padding and some margin top and bottom */
+  width: 100%;
+  padding: 10px 15px;
+  border: black solid 1px;
+  border-radius: 15px;
+  background-color: #000;
+}
+
+.post a {
+  color: #fff;
+}
+
+/* footer */
+#foot {
+  background-color: var(--dark-color);
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-color);
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+
+#foot-list {
+  display: flex;
+  margin: 40px;
+}
+
+#foot-list li {
+  padding: 10px;
+}
+
+#foot-list a {
+  color: var(--light-color);
+}
