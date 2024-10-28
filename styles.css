@@ -4,6 +4,14 @@
   margin: 0;
 }
 
+:root {
+  --primary-color: #000000;
+  --text-color: #000;
+  --alt-color: #5dc3ff;
+  --light-color: #f3f3f3;
+  --dark-color: #383838;
+}
+
 body {
   font-size: 16px;
   line-height: 1.6;
@@ -11,14 +19,7 @@ body {
   font-family: "Chivo Mono", monospace;
   font-optical-sizing: auto;
   font-style: normal;
-}
-
-:root {
-  --primary-color: #fd8888;
-  --text-color: #000;
-  --alt-color: #04645f;
-  --light-color: #fff;
-  --dark-color: #727272;
+  background-color: var(--light-color);
 }
 
 a {
@@ -35,6 +36,8 @@ img {
 
 h1 {
   text-align: center;
+  font-family: "JetBrains Mono", monospace;
+  color: var(--alt-color);
 }
 
 h2,
@@ -44,11 +47,12 @@ h5,
 h6 {
   margin-bottom: 15px;
   text-indent: 5%;
+  font-family: "JetBrains Mono", monospace;
+  color: var(--alt-color);
 }
 
-.container {
-  width: 70%;
-  margin: auto;
+p {
+  margin: 40px 0;
 }
 
 /* navbar */
@@ -59,6 +63,7 @@ h6 {
   align-items: center;
   width: 100%;
   height: 120px;
+  font-family: "JetBrains Mono", monospace;
 }
 
 #logo {
@@ -71,7 +76,7 @@ h6 {
   align-items: center;
   font-weight: 600;
   font-size: 2rem;
-  color: var(--text-color);
+  color: var(--alt-color);
 }
 
 #logo a img {
@@ -93,25 +98,28 @@ h6 {
 }
 
 #main-menu ul li a {
-  color: var(--text-color);
+  color: var(--alt-color);
   font-weight: 600;
 }
 
 #main-menu ul li a:hover {
   transition: 0.5s;
-  color: var(--alt-color);
+  color: var(--light-color);
 }
 
 /* hero */
 #hero {
-  background-color: var(--light-color);
-  min-height: calc(100vh - 290px);
-  margin: 70px auto;
-  width: 80%;
+  margin: 60px;
+  min-height: calc(100vh - 220px);
+}
+
+.container {
+  width: 55%;
+  margin: auto;
 }
 
 .main-cont {
-  margin: 100px 0;
+  margin: 80px 0;
 }
 
 .center-cont {
@@ -152,7 +160,6 @@ h6 {
   justify-content: center;
   color: var(--light-color);
   font-size: 0.8rem;
-  text-decoration: underline;
 }
 
 #foot-list {
