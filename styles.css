@@ -85,15 +85,15 @@ p {
 }
 
 #main-menu {
-  width: 530px;
+  max-width: 470px;
 }
 
 #main-menu ul {
+  display: flex;
   font-size: 1.5rem;
 }
 
 #main-menu ul li {
-  float: left;
   padding: 10px;
 }
 
@@ -107,9 +107,15 @@ p {
   color: var(--light-color);
 }
 
+#mobile-menu {
+  display: none;
+  width: 170px;
+  color: var(--alt-color);
+}
+
 /* hero */
 #hero {
-  margin: 60px;
+  margin: 60px 0;
   min-height: calc(100vh - 220px);
 }
 
@@ -122,6 +128,10 @@ p {
   margin: 80px 0;
 }
 
+.list li {
+  padding: 5px 0;
+}
+
 .center-cont {
   text-align: center;
   margin: 40px;
@@ -132,6 +142,10 @@ p {
 
 .img_container img {
   height: auto;
+}
+
+.imgMobile {
+  display: none;
 }
 
 .project-cont {
@@ -164,7 +178,6 @@ p {
 
 #foot-list {
   display: flex;
-  margin: 40px;
 }
 
 #foot-list li {
@@ -173,4 +186,87 @@ p {
 
 #foot-list a {
   color: var(--light-color);
+}
+
+/* tablet view */
+@media screen and (max-width: 780px) {
+  .container {
+    width: 80%;
+  }
+
+  #mobile-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--light-color);
+    border-radius: 10px;
+    display: block;
+  }
+
+  #main-menu ul {
+    display: none;
+  }
+
+  #main-menu ul.active {
+    display: block;
+    position: absolute;
+    width: 50%;
+    z-index: 1;
+    background-color: var(--primary-color);
+    top: 120px;
+    right: 0;
+    text-align: center;
+  }
+
+  #main-menu ul li {
+    padding: 0;
+  }
+
+  #main-menu ul li a {
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding: 10px;
+  }
+}
+
+/* mobile view */
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 1rem;
+  }
+
+  #navbar {
+    position: fixed;
+  }
+
+  #main-menu ul.active {
+    width: 100%;
+  }
+
+  #hero {
+    margin: 0;
+    padding-top: 120px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .imgDesktop {
+    display: none;
+  }
+
+  .imgMobile {
+    display: block;
+  }
+
+  #foot {
+    font-size: 0.7rem;
+  }
 }

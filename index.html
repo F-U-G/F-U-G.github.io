@@ -22,11 +22,16 @@
     <nav id="navbar">
       <div id="logo">
         <a href="./index.html">
-          <img src="./images/Logo.jpg" alt="logo" />
+          <img src="./images/logo.webp" alt="logo" />
           <p>FUG</p>
         </a>
       </div>
       <div id="main-menu">
+        <div id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
         <ul>
           <li>
             <a href="./index.html">Home</a>
@@ -59,36 +64,33 @@
           <p>
             This website is a collection of my projects, goals, and ideas. I
             focus mainly on tech-related topics, like coding, Linux, and web
-            development. However I also talk about the hobbies that interest me
-            such as yoyoing or Rubik's cubes.
+            development. However I also talk about hobbies that interest me such
+            as yoyoing or Rubik's cubes.
           </p>
         </section>
 
         <aside class="main-cont">
-          <h4>Socials</h4>
+          <h3>Socials</h3>
           <ul class="list">
             <li>
-              <a href="/"><i class="fa-brands fa-youtube"></i> YouTube</a> - I
-              make videos about my hobbies.
+              <a href="/"><i class="fa-brands fa-youtube"></i> YouTube</a>
             </li>
             <li>
-              <a href="/"><i class="fa-brands fa-x-twitter"></i> Twitter/X</a> -
-              I talk about random things im working on.
+              <a href="/"><i class="fa-brands fa-x-twitter"></i> Twitter/X</a>
             </li>
             <li>
               <a href="/"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
-              - My LinkedIn
             </li>
             <li>
-              <a href="/"><i class="fa-brands fa-github"></i> GitHub</a> - My
-              GitHub
+              <a href="/"><i class="fa-brands fa-github"></i> GitHub</a>
             </li>
           </ul>
         </aside>
       </div>
       <div class="container">
         <figure class="img_container">
-          <img src="images/yoyo.png" alt="yoyo" />
+          <img class="imgDesktop" src="images/yoyo.webp" alt="yoyo" />
+          <img class="imgMobile" src="images/yoyoMobile.webp" alt="yoyo" />
           <figcaption>Yoyoing at the park</figcaption>
         </figure>
         <section class="main-cont">
@@ -105,8 +107,8 @@
     </div>
     <!-- Footer -->
     <footer id="foot">
-      <div>&copy2024 Alistair</div>
       <ul id="foot-list">
+        <li>&copy2024 Alistair</li>
         <li>
           <a href="https://www.youtube.com/@fug-x1x"
             ><i class="fa-brands fa-youtube"></i> YouTube</a
@@ -129,5 +131,6 @@
         </li>
       </ul>
     </footer>
+    <script src="./app.js"></script>
   </body>
 </html>
