@@ -15,7 +15,6 @@
 body {
   font-size: 16px;
   line-height: 1.6;
-  font-size: 1.1rem;
   font-family: "Chivo Mono", monospace;
   font-optical-sizing: auto;
   font-style: normal;
@@ -45,14 +44,10 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   text-indent: 5%;
   font-family: "JetBrains Mono", monospace;
   color: var(--alt-color);
-}
-
-p {
-  margin: 40px 0;
 }
 
 /* navbar */
@@ -109,7 +104,7 @@ p {
 
 #mobile-menu {
   display: none;
-  width: 170px;
+  width: 150px;
   color: var(--alt-color);
 }
 
@@ -117,6 +112,7 @@ p {
 #hero {
   margin: 60px 0;
   min-height: calc(100vh - 220px);
+  font-size: 1.1rem;
 }
 
 .container {
@@ -132,12 +128,14 @@ p {
   padding: 5px 0;
 }
 
+.list li a i {
+  color: var(--primary-color);
+}
+
 .center-cont {
   text-align: center;
-  margin: 40px;
   padding: 20px;
-  border: 1px solid black;
-  border-radius: 20px;
+  border: 5px outset #cacaca;
 }
 
 .img_container img {
@@ -173,11 +171,11 @@ p {
   align-items: center;
   justify-content: center;
   color: var(--light-color);
-  font-size: 0.8rem;
 }
 
 #foot-list {
   display: flex;
+  font-size: 0.8rem;
 }
 
 #foot-list li {
@@ -237,12 +235,13 @@ p {
 
 /* mobile view */
 @media screen and (max-width: 500px) {
-  body {
-    font-size: 1rem;
-  }
-
   #navbar {
     position: fixed;
+    justify-content: space-evenly;
+  }
+
+  #logo {
+    width: 150px;
   }
 
   #main-menu ul.active {
@@ -252,6 +251,7 @@ p {
   #hero {
     margin: 0;
     padding-top: 120px;
+    font-size: 1rem;
   }
 
   .container {
@@ -266,7 +266,7 @@ p {
     display: block;
   }
 
-  #foot {
-    font-size: 0.7rem;
+  #foot-list {
+    font-size: 0.6rem;
   }
 }
