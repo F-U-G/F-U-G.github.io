@@ -72,7 +72,7 @@ tr td:last-child {
 }
 
 .container {
-  width: 55%;
+  width: 45%;
   margin: auto;
 }
 
@@ -100,16 +100,21 @@ td a i {
 }
 
 .post {
-  /* Add a shadow, padding and some margin top and bottom */
+  box-shadow: 3px 3px 5px var(--dark-color);
   width: 100%;
-  padding: 10px 15px;
+  padding: 15px 20px;
+  margin: 20px 0;
   border: black solid 1px;
   border-radius: 15px;
   background-color: #000;
 }
 
+.post p {
+  text-align: justify;
+}
+
 .post a {
-  color: #fff;
+  color: var(--light-color);
 }
 
 /* || NAVBAR */
